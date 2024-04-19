@@ -1,5 +1,5 @@
 # Block Thru <br/>
-## 시각장애인의 안전한 독립보행을 위한 유도 블록 장애물 알림 서비스
+### 시각장애인의 안전한 독립보행을 위한 유도 블록 장애물 알림 서비스
 <img src="images/complete_img.png" style="display:inline-block; width:800px; margin:auto;"/>
 <br/>
 
