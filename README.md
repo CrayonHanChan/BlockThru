@@ -30,14 +30,14 @@
 <br/>
 
 ## 5. 학습 데이터
-## [장애물(obstacle) 데이터셋]
+### [장애물(obstacle) 데이터셋]
 <img src="images/obstacle_learningdata.png" style="display:inline-block; width:800px; margin:auto;"/>
 
 #### 구성은 크게 이동체와 고정체 두가지로 나누어져 있으며, 각각 '이동체는 13개', '고정체는 15개'로 '총 28개의 라벨명'으로 구성.
 #### Object Detation 방식 사용.
 <br/>
 
-## [노면(surface) 데이터셋]
+### [노면(surface) 데이터셋]
 <img src="images/surface_learningdata.png" style="display:inline-block; width:800px; margin:auto;"/>
 
 #### '유도블록', '차도', '횡단보도'에 대한 '총 3개의 라벨명'으로 구성.
