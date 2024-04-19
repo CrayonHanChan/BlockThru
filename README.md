@@ -12,8 +12,8 @@
 
 ## 2. 시장조사
 ### 프로젝트 시작에 앞서 시장 조사 결과 '시각 장애인용 사물 인식 정보 서비스'와 '길 안내 서비스'가 있다는 것을 확인.
-#### - 사물 인식 정보 서비스 : 사용자가 원하는 정보에 대한 물체를 찾아서 스마트폰 카메라를 통해 인식을 해야 정보를 얻을 수 있다는 점과 이로 인해 실시간으로 여러 정보를 얻기에는 부적합.
-#### - 길 안내 서비스 : 해외 기반으로 국내에서 사용이 어렵다는 점과 GPS기반으로 길 안내 서비스는 가능 하지만 실시간 장애물 안내가 되지 않는 점. 
+#### 사물 인식 정보 서비스 : 사용자가 원하는 정보에 대한 물체를 찾아서 스마트폰 카메라를 통해 인식을 해야 정보를 얻을 수 있다는 점과 이로 인해 실시간으로 여러 정보를 얻기에는 부적합.
+#### 길 안내 서비스 : 해외 기반으로 국내에서 사용이 어렵다는 점과 GPS기반으로 길 안내 서비스는 가능 하지만 실시간 장애물 안내가 되지 않는 점. 
 #### 따라서, 기존의 서비스와는 차별화된 시각장애인의 안전한 독립보행을 위한 유도 블록 장애물 알림 서비스를 만들고자 함.
 <br/>
 
@@ -32,12 +32,14 @@
 ## 5. 학습 데이터
 ## [장애물(obstacle) 데이터셋]
 <img src="images/obstacle_learningdata.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 #### 구성은 크게 이동체와 고정체 두가지로 나누어져 있으며, 각각 '이동체는 13개', '고정체는 15개'로 '총 28개의 라벨명'으로 구성.
 #### Object Detation 방식 사용.
 <br/>
 
 ## [노면(surface) 데이터셋]
 <img src="images/surface_learningdata.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 #### '유도블록', '차도', '횡단보도'에 대한 '총 3개의 라벨명'으로 구성.
 #### Segmentation 방식 사용.
 <br/>
@@ -45,6 +47,7 @@
 ## 6. 모델 개요
 ### 데이터를 토대로 학습 및 객체 검출(Object Detection)을 수행하기 위해 YOLOv 모델과 Opencv를 선정.
 <img src="images/Model _Overview.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 #### - 장애물 인식: YOLOv Object Detection
 #### - 노면 인식: YOLOv Segmentation
 #### - 신호등 인식: Opencv
@@ -53,22 +56,26 @@
 ## 7. 모델 선정 및 분석
 ### 다음으로 YOLOv model 5~8 중에 최적의 모델을 찾고자 하였고, 파라미터 수가 제일 적은 각 버전의 모델을 이용하여 동일한 데이터 값으로 비교 분석을 실시.
 <img src="images/yolov_model_comparison.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 #### 그 결과 yolo8 에서 가장 좋은 수치를 보였고,YOLOv8로 최종 모델을 선정.
 <br/>
 
 ## 8. 모델 평가 및 개선
 ### 하이퍼파라미터 튜닝을 통해 최적의 결과를 얻기 위해 노력하였으며, 최종적으로 YOLOv8s 모델을 선정.
 <img src="images/yolov8s.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 <br/>
 
 ## 9. 시나리오
 ### 시나리오 설명은 직접 촬영한 길거리 영상을 기준으로 작성.
 <img src="images/scenario.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 <br/>
 
 ## 10. 웹 구현
 ### Gradio, HuggingFace 사용하여 구현.
 <img src="images/gradio.png" style="display:inline-block; width:800px; margin:auto;"/>
+
 #### Read.me 주소 참조
 <br/>
 
