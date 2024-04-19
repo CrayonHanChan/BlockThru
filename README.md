@@ -1,6 +1,8 @@
 # Block Thru <br/>
-### 시각장애인의 안전한 독립보행을 위한 유도 블록 장애물 알림 서비스
+### "시각장애인의 안전한 독립보행을 위한 유도 블록 장애물 알림 서비스"
 <img src="images/complete_img.png" style="display:inline-block; width:800px; margin:auto;"/>
+
+#### 프로젝트 진행기간 24.03.20 ~ 24.04.19
 <br/>
 
 ## 1. 기획의도
